@@ -32,7 +32,8 @@ const ConsumptionSectionsLosses = () => {
 
     useEffect(() => {
         handleConsulta();
-    });
+        // eslint-disable-next-line
+    }, []);
 
     const consumo = [
         {

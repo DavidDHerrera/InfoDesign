@@ -33,7 +33,8 @@ const ConsumptionSectionsTotals = () => {
 
     useEffect(() => {
         handleConsulta();
-    });
+        // eslint-disable-next-line
+    }, []);
 
     const columns = [
         {

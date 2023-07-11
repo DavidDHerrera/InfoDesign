@@ -28,11 +28,10 @@ const ConsumptionSectionsDetailed = () => {
                 setLoading(false);
             });
     };
-
     useEffect(() => {
         handleConsulta();
-    });
-
+        // eslint-disable-next-line
+    }, []);
     const consumo = [
         {
             Header: 'Linea',
