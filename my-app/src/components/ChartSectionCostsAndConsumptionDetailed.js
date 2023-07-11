@@ -50,20 +50,24 @@ const ChartSectionCostsAndConsumptionDetailed = ({ data, residencial, comercial,
               residencial === 'Consumo Residencial'
                 ? datum.consumo_residencial
                 : residencial === 'Costo Residencial'
-                ? datum.costo_residencial
-                : residencial === 'Perdidas Residencial'
-                ? datum.perdidas_residencial
-                : 0
+                  ? datum.costo_residencial
+                  : residencial === 'Perdidas Residencial'
+                    ? datum.perdidas_residencial
+                    : residencial === 'Residencial'
+                      ? datum.Residencial
+                      : 0
             }
             barWidth={10}
             labels={({ datum }) =>
               residencial === 'Consumo Residencial'
                 ? `Consumo Residencial: ${datum.consumo_residencial}`
                 : residencial === 'Costo Residencial'
-                ? `Costo Residencial: ${datum.costo_residencial}`
-                : residencial === 'Perdidas Residencial'
-                ? `Perdidas Residencial: ${datum.perdidas_residencial}`
-                : ''
+                  ? `Costo Residencial: ${datum.costo_residencial}`
+                  : residencial === 'Perdidas Residencial'
+                    ? `Perdidas Residencial: ${datum.perdidas_residencial}`
+                    : residencial === 'Residencial'
+                      ? `Perdidas Residencial: ${datum.Residencial}`
+                      : ''
             }
             labelComponent={<VictoryTooltip />}
             style={{
@@ -78,20 +82,24 @@ const ChartSectionCostsAndConsumptionDetailed = ({ data, residencial, comercial,
               comercial === 'Consumo Comercial'
                 ? datum.consumo_comercial
                 : comercial === 'Costo Comercial'
-                ? datum.costo_comercial
-                : comercial === 'Perdidas Comercial'
-                ? datum.perdidas_comercial
-                : 0
+                  ? datum.costo_comercial
+                  : comercial === 'Perdidas Comercial'
+                    ? datum.perdidas_comercial
+                    : comercial === 'Comercial'
+                      ? datum.Comercial
+                      : 0
             }
             barWidth={10}
             labels={({ datum }) =>
               comercial === 'Consumo Comercial'
                 ? `Consumo Comercial: ${datum.consumo_comercial}`
                 : comercial === 'Costo Comercial'
-                ? `Costo Comercial: ${datum.costo_comercial}`
-                : comercial === 'Perdidas Comercial'
-                ? `Perdidas Comercial: ${datum.perdidas_comercial}`
-                : ''
+                  ? `Costo Comercial: ${datum.costo_comercial}`
+                  : comercial === 'Perdidas Comercial'
+                    ? `Perdidas Comercial: ${datum.perdidas_comercial}`
+                    : comercial === 'Comercial'
+                      ? `Perdidas Comercial: ${datum.Comercial}`
+                      : ''
             }
             labelComponent={<VictoryTooltip />}
             style={{
@@ -106,20 +114,24 @@ const ChartSectionCostsAndConsumptionDetailed = ({ data, residencial, comercial,
               industrial === 'Consumo Industrial'
                 ? datum.consumo_industrial
                 : industrial === 'Costo Industrial'
-                ? datum.costo_industrial
-                : industrial === 'Perdidas Industrial'
-                ? datum.perdidas_industrial
-                : 0
+                  ? datum.costo_industrial
+                  : industrial === 'Perdidas Industrial'
+                    ? datum.perdidas_industrial
+                    : industrial === 'Industrial'
+                      ? datum.Industrial
+                      : 0
             }
             barWidth={10}
             labels={({ datum }) =>
               industrial === 'Consumo Industrial'
                 ? `Consumo Industrial: ${datum.consumo_industrial}`
                 : industrial === 'Costo Industrial'
-                ? `Costo Industrial: ${datum.costo_industrial}`
-                : industrial === 'Perdidas Industrial'
-                ? `Perdidas Industrial: ${datum.perdidas_industrial}`
-                : ''
+                  ? `Costo Industrial: ${datum.costo_industrial}`
+                  : industrial === 'Perdidas Industrial'
+                    ? `Perdidas Industrial: ${datum.perdidas_industrial}`
+                    : industrial === 'Industrial'
+                      ? `Perdidas Industrial: ${datum.Industrial}`
+                      : ''
             }
             labelComponent={<VictoryTooltip />}
             style={{

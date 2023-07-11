@@ -16,11 +16,6 @@ const Tab = ({ label, active, onClick }) => {
     );
 };
 
-// Componente para el contenido de una pestaña
-const TabContent = ({ children }) => {
-    return <div className="tab-content">{children}</div>;
-};
-
 // Componente principal para el sistema de pestañas
 const Tabs = ({ tabs }) => {
     const [activeTab, setActiveTab] = useState(0);
@@ -61,7 +56,7 @@ const PruebaInfoDesign = () => {
         },
         {
             label: 'Pestaña 3',
-            component: <ConsumptionSectionsLosses/>
+            component: <ConsumptionSectionsLosses />
         }
     ];
 

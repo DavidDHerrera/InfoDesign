@@ -3,7 +3,7 @@ import axios from 'axios';
 
 import { TableSection } from './TableSection';
 import { FilterSection } from './FilterSection';
-import { ChartSectionCostsAndConsumptionLosses } from './ChartSectionCostsAndConsumptionLosses';
+import { ChartSectionCostsAndConsumptionDetailed } from './ChartSectionCostsAndConsumptionDetailed';
 
 const ConsumptionSectionsLosses = () => {
     const [data, setData] = useState([]);
@@ -32,7 +32,7 @@ const ConsumptionSectionsLosses = () => {
 
     useEffect(() => {
         handleConsulta();
-    }, []);
+    });
 
     const consumo = [
         {
@@ -75,7 +75,7 @@ const ConsumptionSectionsLosses = () => {
                         <p className='message-error'>No se encontraron resultados.</p>
                     ) : (
                         <div className="flex-container">
-                            <ChartSectionCostsAndConsumptionLosses data={data} />
+                            <ChartSectionCostsAndConsumptionDetailed data={data} residencial='Residencial' comercial='Comercial' industrial='Industrial' title='Perdidas' />
                         </div>
                     )}
                     {!noResults && <TableSection columns={consumo} data={data} />}

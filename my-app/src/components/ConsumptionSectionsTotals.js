@@ -33,7 +33,7 @@ const ConsumptionSectionsTotals = () => {
 
     useEffect(() => {
         handleConsulta();
-    }, []);
+    });
 
     const columns = [
         {
