@@ -1,0 +1,305 @@
+.chart-container {
+  margin: 20px;
+}
+
+.chart-title {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.date-picker-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.date-picker-wrapper>* {
+  margin: 0 10px;
+}
+
+.consulta-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.chart-wrapper {
+  width: 45%;
+}
+
+.chart-wrapper svg {
+  overflow: visible !important;
+}
+
+.chart-wrapper .VictoryTooltip {
+  font-size: 10px;
+  padding: 4px 8px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  border-radius: 4px;
+}
+
+.chart-wrapper .VictoryLegend {
+  font-size: 10px;
+}
+
+.chart-wrapper .VictoryLegend>.VictoryLegend-title {
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.chart-wrapper .VictoryLegend>.VictoryLegend-data {
+  display: flex;
+  align-items: center;
+}
+
+.chart-wrapper .VictoryLegend>.VictoryLegend-data>.VictoryLegend-label {
+  margin-right: 4px;
+}
+
+.chart-wrapper .VictoryAxis {
+  stroke: black;
+}
+
+.chart-wrapper .VictoryAxis>.VictoryAxis-tick>text {
+  font-size: 10px;
+  padding: 5px;
+}
+
+.chart-wrapper .VictoryAxis>.VictoryAxis-tick:last-child>line {
+  display: none;
+}
+
+.chart-wrapper .VictoryBar {
+  fill: rgba(0, 0, 0, 0.6);
+}
+
+.chart-wrapper .VictoryBar:hover {
+  fill: rgba(0, 0, 0, 0.8);
+}
+
+.chart-wrapper .VictoryGroup>.VictoryBar:last-child {
+  fill: rgba(54, 162, 235, 1);
+}
+
+.chart-wrapper .VictoryGroup>.VictoryBar:last-child:hover {
+  fill: rgba(54, 162, 235, 0.8);
+}
+
+.date-picker-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.date-picker-wrapper .react-datepicker-wrapper {
+  margin-right: 10px;
+}
+
+.date-picker-wrapper .react-datepicker__input-container {
+  display: inline-block;
+}
+
+.date-picker-wrapper .react-datepicker__input-container input {
+  width: 100px;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.date-picker-wrapper .consulta-button {
+  padding: 8px 16px;
+  font-size: 14px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.date-picker-wrapper .consulta-button:hover {
+  background-color: #0056b3;
+}
+
+.table-container {
+  margin-top: 20px;
+  overflow-x: auto;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.table th,
+.table td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  text-align: center;
+}
+
+.table tr:hover {
+  background-color: #f5f5f5;
+}
+
+.date-picker-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.date-picker-wrapper>* {
+  margin-right: 10px;
+}
+
+.consulta-button {
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.chart-container {
+  margin-bottom: 20px;
+}
+
+.chart-wrapper {
+  width: 50%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+/* Estilos para el contenedor principal de las pestañas */
+.tabs-container {
+  width: 100%;
+}
+
+/* Estilos para la lista de pestañas */
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Estilos para una pestaña */
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #f5f5f5;
+  border: none;
+  border-bottom: 2px solid transparent;
+  border-radius: 5px 5px 0 0;
+  transition: background-color 0.3s, border-color 0.3s;
+  font-weight: bold;
+  color: #555;
+  margin-right: 10px;
+}
+
+.tab.active {
+  background-color: #fff;
+  border-bottom-color: #555;
+}
+
+/* Estilos para el contenido de las pestañas */
+.tab-contents {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-radius: 0 5px 5px 5px;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el título del gráfico */
+.chart-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Estilos para el contenido de las pestañas */
+.tab-content {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+h4 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.message-error {
+  font-size: 18px;
+  color: #ff0000;
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 4px;
+}
+
+
+.message-load {
+  font-size: 18px;
+  color: #555555;
+  text-align: center;
+  margin: 20px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 4px;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Estilos responsivos para la tabla */
+@media (max-width: 768px) {
+  .chart-wrapper {
+    width: 100%;
+  }
+
+  .table-container {
+    overflow-x: scroll;
+  }
+
+  .date-picker-wrapper {
+    gap: 15px;
+    flex-direction: column;
+  }
+
+  .flex-container {
+    flex-direction: column;
+  }
+
+}
